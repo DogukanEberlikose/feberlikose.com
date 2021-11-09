@@ -1,0 +1,89 @@
+<div
+  class="container-fluid"
+  
+>
+  <div class="container">
+    <div class="card">
+      <div class="card-header"><h3 style="color: rgb(255, 255, 255);">Subscribe for news!</h3></div>
+      <div class="card-body">
+        <div class="container" style="display: flexbox">
+          <div class="mb-3">
+            <form [formGroup]="customerAddForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="customerName"
+                  formControlName="name"
+                  placeholder="Your Name!"
+                />
+              </div>
+            </form>
+          </div>
+          <div class="mb-3">
+            <form [formGroup]="customerAddForm">
+              <div class="form-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="customerSurname"
+                  formControlName="surname"
+                  placeholder="Your Surname!"
+                />
+              </div>
+            </form>
+          </div>
+        
+
+        <div class="mb-3">
+          <form [formGroup]="customerAddForm">
+            <div class="form-group">
+              <input
+                type="email"
+                class="form-control"
+                id="customerEmail"
+                formControlName="email"
+                placeholder="E-mail address"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="mb-3">
+          <form [formGroup]="customerAddForm">
+            <div class="form-group">
+              <label style="margin:2px;" for="Language"> Don't forget to choose your language</label>
+              <select
+                class="form-select"
+                type="text"
+                id="form-select"
+                formControlName="language"
+                
+                
+              >
+                
+                <option value="English">English</option>
+                <option value="Turkish">Turkish</option>
+                <option value="Danish">Danish</option>
+              </select>
+            </div>
+          </form>
+        </div>
+
+        <div
+          class="d-grid gap-2 col-6 mx-auto"
+          style="margin-top: 1em; display: flexbox"
+        >
+          <button
+            type="submit"
+            class="btn btn-success margin-right"
+            (click)="add()"
+          >
+            Subscribe!
+          </button>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+</div>

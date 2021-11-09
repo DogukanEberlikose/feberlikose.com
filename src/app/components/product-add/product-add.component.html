@@ -1,0 +1,69 @@
+<div class="content">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h5>İçerik Ekle</h5>
+      </div>
+      <div class="card-body">
+        <div class="mb-3">
+          <form [formGroup]="productAddForm">
+            <div class="form-group">
+                <label for="productName">Ürün adı</label>
+              <input
+                type="text"
+                id="productName"
+                formControlName="productName"
+                class="form-control"
+                placeholder="Yin Yoga"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="mb-3">
+          <form [formGroup]="productAddForm">
+              <label for="categoryId">Kategori</label>
+            <div class="form-group">
+             <select id="category-select" formControlName="categoryId"
+             class="form-select"
+            >
+             
+             <option *ngFor="let category of categories" value="{{category.categoryId}}">{{category.categoryName}}</option>
+            </select>
+            </div>
+          </form>
+        </div>
+        <div class="mb-3">
+          <form [formGroup]="productAddForm">
+            <div class="form-group">
+                <label for="summaryDescription">Özet Bilgi</label>
+              <input
+                type="text"
+                id="summaryDescription"
+                formControlName="summaryDescription"
+                class="form-control"
+                placeholder="En kolay Yoga"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="mb-3">
+          <form [formGroup]="productAddForm">
+            <div class="form-group">
+                <label for="description">Açıklama</label>
+              <input
+                type="text"
+                id="description"
+                formControlName="description"
+                class="form-control"
+                placeholder="Detaylı İçerik"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="card-footer">
+          <button class="btn btn-fill btn-primary" (click)="add()" > Ekle</button>
+      </div>
+    </div>
+  </div>
+</div>

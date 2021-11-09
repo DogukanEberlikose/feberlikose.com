@@ -1,0 +1,21 @@
+.content{
+    margin-bottom: 10em;
+    margin-top: 2em;
+
+}
+.card{
+    border-width: 2px;
+    border-color: rgb(0, 0, 0);
+    margin: 20px;
+    border-radius: 15px;
+}
+.card-header{
+    background-color: rgb(206, 206, 206);
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.card-footer{
+    background-color: rgb(206, 206, 206);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}

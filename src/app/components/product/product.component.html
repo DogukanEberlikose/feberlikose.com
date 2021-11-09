@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="mb-3" style="margin-top: 20px; margin-bottom: 0px; display: flex">
+    <label for="filterText" class="form-label"></label>
+    <input
+      type="text"
+      [(ngModel)]="filterText"
+      class="form-control"
+      id="filterText"
+      placeholder="Search"
+      style="border-radius: 19px; border-color: rgb(0, 0, 0); border-width: 2px"
+    />
+  </div>
+</div>
+
+<div class="d-flex justify-content-center">
+  <div
+    *ngIf="dataLoaded == false"
+    style="margin: 10em"
+    class="spinner-grow"
+    role="status"
+  >
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div id="spinner"
+  *ngIf="dataLoaded == true"
+  
+>
+  <div id="product-card" class="row row-cols-1 row-cols-md-2 g-4">
+    <div *ngFor="let product of products | filterPipe: filterText" class="col">
+      <div class="card" id="card">
+        <img id="product-image"
+          [src]="getImageUrl(product)"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5
+            routerLink="/products/getproductdetails/{{ product.productId }}"
+            class="card-title"
+          >
+            {{ product.productName }}
+          </h5>
+          <p class="card-text">{{ product.summaryDescription }}</p>
+          <button
+            routerLink="/products/getproductdetails/{{ product.productId }}"
+            type="button"
+            class="btn btn-secondary btn-sm"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

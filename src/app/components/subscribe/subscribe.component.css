@@ -1,0 +1,16 @@
+.card{
+    display: flexbox;  
+    background-color: rgb(230, 230, 230); 
+    border-radius: 10px; border-width: 2px; 
+    border-color: rgb(27, 27, 27);
+}
+.card-header{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px; 
+    border-width: 0px; 
+    background-color: rgb(27, 27, 27);
+    border-color:rgb(27, 27, 27);
+}
+.container-fluid{
+    margin-bottom: 4em; background-color: #f8f8f8
+}

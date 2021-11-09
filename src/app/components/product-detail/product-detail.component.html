@@ -1,0 +1,35 @@
+<div class="d-flex justify-content-center">
+  <div
+    *ngIf="dataLoaded == false"
+    style="margin: 10em"
+    class="spinner-grow"
+    role="status"
+  >
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</div>
+
+<div id="spinner"
+  *ngIf="dataLoaded == true"
+  >
+
+<div style=" margin-bottom: 4em;">
+  <div *ngFor="let product of products" class="card mb-3" style="contain: content;">
+    <div class="d-flex justify-content-center" style="display: flex;">
+      <img
+        [src]="getImageUrl(product)"
+        class="card-img-top"
+        style="height: auto; width: 700px; display: flex ;"
+        alt="..."
+      />
+    </div>
+  
+    <div class="card-body">
+      <h5 class="card-title">{{ product.productName }}</h5>
+      <p class="card-text">{{ product.description }}</p>
+      
+    </div>
+  </div>
+</div>
+</div>
+

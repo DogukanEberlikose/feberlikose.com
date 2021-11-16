@@ -1,15 +1,18 @@
 .card{
     display: flexbox;  
-    background-color: rgb(230, 230, 230); 
-    border-radius: 10px; border-width: 2px; 
-    border-color: rgb(27, 27, 27);
+    background-color: rgb(255, 255, 255); 
+    border-radius: 5px; border-width: 1px; 
+    border-color: #272d31;
+    margin-top: 0px;
 }
 .card-header{
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px; 
-    border-width: 0px; 
-    background-color: rgb(27, 27, 27);
-    border-color:rgb(27, 27, 27);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px; 
+    border-width: 2px; 
+    margin-right: 0 auto;
+    margin-top: 0px;
+    background-color:  #272d31;
+    border-color: #272d31;
 }
 .container-fluid{
     margin-bottom: 4em; background-color: #f8f8f8

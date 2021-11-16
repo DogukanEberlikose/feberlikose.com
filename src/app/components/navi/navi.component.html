@@ -1,37 +1,59 @@
+
 <div class="container-fluid" style="background-color: #f8f8f8;" >
-  <nav
-    class="navbar navbar-expand navbar-dark"
-    style="background-color: #070408"
-    
-  >
-    <div class="container-fluid">
-      <a class="navbar-brand" routerLink="/">Home</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+  <nav style="background-color: #7ebbe4;" class="navbar navbar-expand-sm navbar-dark "  aria-label="Third navbar example">
+    <div  class="container-fluid">
+      <a  class="navbar-brand" routerLink="/">YogaWithFirdevs</a>
+      <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul  class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="/about"
-              >About</a
-            >
+  
+      <div [ngbCollapse]="!isCollapsed" class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li (click)="isCollapsed = !isCollapsed" class="nav-item">
+            <a  class="nav-link " aria-current="page" routerLink="/"
+            >Home</a>
           </li>
-          
-            <app-category style="display: flex;" ></app-category>
+          <li (click)="isCollapsed = !isCollapsed" class="nav-item">
+            <a  class="nav-link " aria-current="page" routerLink="/about"
+            >About</a>
+          </li>
+          <li (click)="isCollapsed = !isCollapsed" class="nav-item" id="categoryitem" >
+            <app-category  id="app-category"></app-category>
+          </li>
+          <li (click)="isCollapsed = !isCollapsed" *ngIf="authenticated==true" class="nav-item">
+            <a aria-current="page" class="nav-link " routerLink="/about">Events</a>
+          </li>
+        </ul>
+        
+      </div>
+    </div>
+  </nav> 
+
+
+  <nav *ngIf="authenticated==true" style="background-color: #43c02a;" class="navbar navbar-expand-sm navbar-dark "  aria-label="Third navbar example">
+    <div  class="container-fluid">
+      <a  class="navbar-brand" routerLink="/">Admin</a>
+      <div [ngbCollapse]="!isCollapsed" class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+          <li *ngIf="authenticated==true" class="nav-item">
+            <a  class="nav-link " aria-current="page" routerLink="/products/add"
+            >Product Add</a>
+          </li>
+          <li *ngIf="authenticated==true" class="nav-item">
+            <a  class="nav-link " aria-current="page" routerLink="/customers/getall"
+            >Customers</a>
+          </li>
           
           
         </ul>
+        
       </div>
-      
     </div>
-  </nav>
+  </nav> 
+
+
 </div>
+
+
+
 

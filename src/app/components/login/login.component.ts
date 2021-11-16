@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { loginModel } from './../../models/loginModel';
 import { AuthService } from './../../services/auth.service';
@@ -15,7 +16,8 @@ export class LoginComponent implements OnInit {
   constructor(
     private formBuilder:FormBuilder, 
     private authService:AuthService,
-    private toastrService:ToastrService) { }
+    private toastrService:ToastrService,
+    private router:Router) { }
 
   ngOnInit(): void {
     this.createLoginForm();
@@ -35,6 +37,10 @@ export class LoginComponent implements OnInit {
         this.authService.login(loginModel).subscribe(response=>{
           this.toastrService.success("Welcome!")
           localStorage.setItem("token",response.data.token)
+          this.router.navigateByUrl("/")
+          setTimeout(function () {
+            location.reload();
+          },100);
         }, responseError=>{
           this.toastrService.error(responseError.error)
         })

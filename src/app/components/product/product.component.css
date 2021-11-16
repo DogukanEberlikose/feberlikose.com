@@ -24,12 +24,12 @@
           margin-left: 5px;
           margin-right: 5px;
           margin-top: 5px;
-          border-radius: 10px;
+          border-radius: 5px;
           border-width: 2px;
           border-left-width: 0px;
 }
 #product-image{
-    border-top-left-radius: 8px; border-top-right-radius: 8px;
+    border-top-left-radius: 3px; border-top-right-radius: 3px;
 }
 #spinner{
     margin-bottom: 3em; margin-right: 5px; margin-left: 5px;

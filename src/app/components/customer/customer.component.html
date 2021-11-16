@@ -1,0 +1,40 @@
+
+    <div class="card" style="display: flexbox; margin-bottom: 4em; margin-top: 5px;">
+        <div class="row">
+            <div class="col">
+              <h5>Name</h5>
+            </div>
+            <div class="col">
+                <h5>Surname</h5>
+            </div>
+            <div class="col">
+                <h5>Email</h5>
+            </div>
+            <div class="col">
+                <h5>Language</h5>
+            </div>
+          </div>
+          
+          <table class="table-light" style="display: flexbox; margin-bottom: 4em; margin-top: 5px;">
+        <div *ngFor="let customers of customers" class="row" style="text-size-adjust: 1px;">
+            <div class="col">
+                
+                {{customers.name}}
+            </div>
+            <div class="col">
+                
+                {{customers.surname}}
+            </div>
+            <div class="col">
+                
+                {{customers.email}}
+            </div>
+            <div class="col" >
+                
+                {{customers.language}}
+            </div>
+          </div>
+        </table>
+    </div>
+
+

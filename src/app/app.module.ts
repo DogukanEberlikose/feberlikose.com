@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule, HTTP_INTERCEPTORS} from '@angular/common/http'
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import { BrowserAnimationsModule} from "@angular/platform-browser/animations"
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { ProductAddComponent } from './components/product-add/product-add.compon
 import { ToastrModule} from "ngx-toastr";
 import { LoginComponent } from './components/login/login.component';
 import { AuthInterceptor } from './interceptors/auth.interceptor';
+import { CustomerComponent } from './components/customer/customer.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
     SubscribeComponent,
     ProductAddComponent,
     LoginComponent,
+    CustomerComponent,
   ],
   imports: [
     BrowserModule,
@@ -45,7 +48,8 @@ import { AuthInterceptor } from './interceptors/auth.interceptor';
     BrowserAnimationsModule,
     ToastrModule.forRoot({
       positionClass:"toast-bottom-right"
-    })
+    }),
+    NgbModule,
     
   ],
   providers: [

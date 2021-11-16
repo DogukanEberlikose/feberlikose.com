@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { AuthService } from './../../services/auth.service';
+import { Component, NgModule, OnInit } from '@angular/core';
+
+
 
 
 @Component({
@@ -6,14 +9,26 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './navi.component.html',
   styleUrls: ['./navi.component.css'],
 })
+
 export class NaviComponent implements OnInit {
+  isCollapsed=false;
+  authenticated:boolean;
   
-  constructor() {}
+  constructor(private autService:AuthService,) {}
 
   ngOnInit(): void {
-   
+    this.isAuthenticated()
     
   }
-
+  isAuthenticated(){
+    if(
+      this.autService.isAuthenticated()
+    ){
+      this.authenticated=true
+    }else{
+      this.authenticated=false
+    }
+  }
+  
   
 }

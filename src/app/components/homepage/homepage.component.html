@@ -1,4 +1,4 @@
-<div class="contain-fluid" style="margin-top: 0em; margin-bottom: 4em">
+<div class="contain-fluid" id="homepage">
   <div class="card" id="banner-card">
     <img
       src="https://localhost:44336/images/feberlikose2-banner.jpeg"
@@ -9,13 +9,10 @@
   </div>
 
   <div>
-    <div
-      style="text-align: center; margin-top: 0px"
-      class="p-4 p-md-4 mb-3 text-dark rounded bg-light"
-    >
+    <div id="welcome-banner" class="p-4 p-md-4 mb-3 text-dark rounded bg-light">
       <div class="col py-2 px-lg-5">
-        <h3 style="text-align: top;" class="display-4 fst-italic">Hello!</h3>
-        <p style="text-align: justify;" class="lead my-3">
+        <h3 id="welcome-banner-header" class="display-4 fst-italic">Hello!</h3>
+        <p id="welcome-banner-text" class="my-3">
           I’m Firdevs and I’m here to guide you on your own yoga journey. My
           classes are good for everybody and appropriate for all level. Whether
           you prefer practicing online in your own time, need live classes over
@@ -62,7 +59,7 @@
                 additional content.
               </p>
               <a
-                href="http://localhost:4200/products/getproductdetails/3"
+                href="http://localhost:4200/products/productdetails/3"
                 class="stretched-link"
               ></a>
             </div>
@@ -90,17 +87,19 @@
         </div>
       </div>
 
-      <div
-        class="p-4 p-md-3 mb-1 text-black rounded"
-        style="background-color: #FDA1FB69"
+      <div id="yogacontent"
+        class="p-4 p-md-3 mb-5  text-black rounded"
+        
       >
         <div class="col py-1 px-lg-5">
-          <h3 style="text-align: right; margin-top: 2px;" class="display-5 fst-italic">
+          <h3 id="yogacontentheader"
+            class="display-5 fst-italic my-3"
+          >
             Why do people do yoga?
           </h3>
 
-          <h5 class="display-8 fst-italic">Yoga helps you;</h5>
-          <ul class="lead my-3">
+          <h5 class="display-7">Yoga helps you;</h5>
+          <ul class=" my-4">
             <li class="list-item">
               to obtain optimum physical health and improve your posture,
             </li>
@@ -117,19 +116,20 @@
           <p class="lead mb-0">
             <a
               href="http://localhost:4200/products/category/1"
-              class="text-black fw-bold"
+              class=" fw-bold"
               >Let's explore!</a
             >
           </p>
         </div>
       </div>
-      <div
-        style="text-align: center; margin-bottom: 0px"
-        class="p-4 p-md-5 mb-4 text-dark rounded bg-light"
+      <div id="pricing"
+        class="p-4 p-md-5  text-dark rounded bg-light"
       >
         <div class="col py-1 px-lg-5">
-          <h3 style="text-align: left" class="display-5 fst-italic">Choose a program</h3>
-          <p style="text-align:justify" class="lead my-3">
+          <h3 id="pricingheader" class="display-5 fst-italic">
+            Choose a program
+          </h3>
+          <p id="pricingdescription" class=" my-1">
             You can choose a suitable program below and start yoga with me. For
             more information, you can subscribe or contact me with my email
             address.
@@ -180,7 +180,7 @@
                 focusable="false"
               >
                 <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#FDA1FB69" /> 
+                <rect width="100%" height="100%" fill="#FDA1FB69" />
                 <text x="50%" y="50%" fill="#eceeef" dy=".2em"></text>
               </svg>
             </div>
@@ -229,7 +229,7 @@
                 focusable="false"
               >
                 <title>Placeholder</title>
-                <rect width="100%" height="100%" fill="#FA60F896" /> 
+                <rect width="100%" height="100%" fill="#FA60F896" />
                 <text x="50%" y="50%" fill="#eceeef" dy=".3em"></text>
               </svg>
             </div>
@@ -253,7 +253,7 @@
           >
             <div class="col p-4 d-flex flex-column position-static">
               <strong class="d-inline-block mb-2 text-success">Design</strong>
-              <h3 class="mb-0">One Hour</h3>
+              <h3 class="mb-0">One Class</h3>
               <div class="mb-1 text-muted">Nov 11</div>
               <p class="mb-auto">
                 This is a wider card with supporting text below as a natural

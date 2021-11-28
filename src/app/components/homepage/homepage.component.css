@@ -40,13 +40,15 @@
 #card1{
     border-radius: 5px; 
     border-width: 2px;  margin-top: 0px; margin-left: 50px; margin-bottom: 40px;
-    border-left-width: 0px;
+    border-left-width: 0px; 
 }
 #card2{
     border-radius: 5px; 
-    border-width: 2px; margin-top: 0px; margin-left: 30px; margin-right: 30px; margin-bottom: 40px;
+    border-width: 2px; margin-top: 0px; margin-left: 40px; margin-right: 40px; margin-bottom: 40px;
     border-left-width: 0px;
+    
 }
+
 #card3{
     border-radius: 5px; 
     border-width: 2px;  margin-top: 0px; margin-right: 50px; margin-bottom: 40px;
@@ -62,7 +64,33 @@
 #banner-image{
     border-top-left-radius: 0px; border-top-right-radius: 0px; margin-bottom: 0px; 
 }
-
+#homepage{
+    margin-top: 0em; margin-bottom: 4em;
+}
+#welcome-banner{
+    text-align: center; margin-top: 0px;
+}
+#welcome-banner-header{
+    text-align: top; 
+}
+#welcome-banner-text{
+    text-align: justify;
+}
+#yogacontent{
+    background-color: #fda1fb69;
+}
+#yogacontentheader{
+    text-align: right; margin-top: 2px;
+}
+#pricing{
+    text-align:center;
+}
+#pricingheader{
+    text-align: left;
+}
+#pricingdescription{
+    text-align: justify
+}
 
 
 

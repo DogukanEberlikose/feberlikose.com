@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="mb-3" style="margin-top: 13px; margin-bottom: 0px; display: flex">
+  <div id="search" class="mb-3">
     <label for="filterText" class="form-label"></label>
     <input
       type="text"
@@ -7,7 +7,6 @@
       class="form-control  shadow-sm"
       id="filterText"
       placeholder="Search"
-      style="border-radius: 19px; border-color: rgb(0, 0, 0); border-width: 2px"
     />
   </div>
 </div>
@@ -15,7 +14,6 @@
 <div class="d-flex justify-content-center">
   <div
     *ngIf="dataLoaded == false"
-    style="margin: 10em"
     class="spinner-grow"
     role="status"
   >

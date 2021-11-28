@@ -34,3 +34,12 @@
 #spinner{
     margin-bottom: 3em; margin-right: 5px; margin-left: 5px;
 }
+#search{
+    margin-top: 13px; margin-bottom: 0px; display: flex;
+}
+#filterText{
+    border-radius: 19px; border-color: rgb(0, 0, 0); border-width: 2px;
+}
+.spinner-grow{
+    margin: 10em;
+}

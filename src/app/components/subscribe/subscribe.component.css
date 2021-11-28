@@ -1,8 +1,8 @@
 .card{
     display: flexbox;  
     background-color: rgb(255, 255, 255); 
-    border-radius: 5px; border-width: 1px; 
-    border-color: #272d31;
+    border-radius: 5px; border-width: 2px; 
+    border-color: #3b3d3f;
     margin-top: 0px;
 }
 .card-header{
@@ -11,8 +11,8 @@
     border-width: 2px; 
     margin-right: 0 auto;
     margin-top: 0px;
-    background-color:  #272d31;
-    border-color: #272d31;
+    background-color:  #7ebbe4;
+    border-color: #7ebbe4;
 }
 .container-fluid{
     margin-bottom: 4em; background-color: #f8f8f8

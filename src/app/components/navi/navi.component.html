@@ -1,6 +1,6 @@
 
-<div class="container-fluid" style="background-color: #f8f8f8;" >
-  <nav style="background-color: #7ebbe4;" class="navbar navbar-expand-sm navbar-dark "  aria-label="Third navbar example">
+<div id="navbarcontainer" class="container-fluid" >
+  <nav id="navbar" class="navbar navbar-expand-sm navbar-dark "  aria-label="Third navbar example">
     <div  class="container-fluid">
       <a  class="navbar-brand" routerLink="/">YogaWithFirdevs</a>
       <button class="navbar-toggler" (click)="isCollapsed = !isCollapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
@@ -30,7 +30,7 @@
   </nav> 
 
 
-  <nav *ngIf="authenticated==true" style="background-color: #43c02a;" class="navbar navbar-expand-sm navbar-dark "  aria-label="Third navbar example">
+  <nav id="navbaradmin" *ngIf="authenticated==true" class="navbar navbar-expand-sm navbar-dark "  aria-label="Third navbar example">
     <div  class="container-fluid">
       <a  class="navbar-brand" routerLink="/">Admin</a>
       <div [ngbCollapse]="!isCollapsed" class="collapse navbar-collapse" id="navbarsExample03">

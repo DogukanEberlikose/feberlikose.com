@@ -3,7 +3,14 @@
         display: flex;
     }
 }
-
-  
+#navbarcontainer{
+    background-color: #f8f8f8;
+}
+#navbar{
+    background-color: #1f2225;
+}
+#navbaradmin{
+    background-color: #43c02a;
+}  
   
   
